@@ -1,4 +1,4 @@
-## Garage Gym Reviews Recommendation System
+# Garage Gym Reviews Recommendation System
 
 **Abstract:** 
 
@@ -11,3 +11,29 @@ Each blog from Garage Gym reviews was scraped using BeautifulSoup. A total of 43
 The non-negative matrix factorization (NMF) method was used to reduce the dimensionality of the document-term matrix even further. The NMF method was set to parse the document term matrix into 10 topics. This in turn made a document-topic matrix and a topic-term matrix. The document-topic matrix gave each document a weight for each of the 10 topics. The document with the highest weight in a specific topic would be the most heavily correlated to that topic. The topic-term matrix gives each term a specific weight in each topic. This matrix decomposition allows for much faster processing of a larger dataset to take place. 
 
 From the 10 topics, the terms with the highest weight could be extracted. These terms gave a description of how the topic was formulated. For instance topic 1 in the analysis contained the words: shoe, nike, metcon, heel, nano, and reebok. All of these terms are weightlifting shoe related. When using the document-topic matrix you can find that the document most heavily correlated to topic 1 is called, “7 Best CrossFit Shoes of 2021”. This reinforces the assumption that topic 1 is related to weightlifting shoes. 
+
+## Topic Modeling Output
+
+![](../Images/GGR_10_Topics.png)
+
+**Topic Analysis:**
+
+**Topic 0:** Rack and rack accessories
+
+**Topic 1:** Weightlifting shoes
+
+**Topic 2:** Barbells
+
+**Topic 3:** Cardio bikes
+
+**Topic 4:** Adjustable dumbbells
+
+**Topic 5:** Cardio machines
+
+**Topic 6:** Weightlifting belts/ belt squat machine
+
+**Topic 7:** Weight plates
+
+**Topic 8:** Loadable weight vests
+
+**Topic 9:** Weight benches
